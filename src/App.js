@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Footer from './Components/Footer';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutUs from "./Components/AboutUs";
 import Gallery from "./Components/Gallery";
 import OurService from "./Components/OurService";
