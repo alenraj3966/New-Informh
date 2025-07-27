@@ -13,11 +13,11 @@ import Donate from "./Components/Donate";
 
 function App() {
 
-  useEffect(() => {
-   var div = document.getElementById("pageTopTitle");
-                    div.innerHTML =
-                      "Informh - " + sessionStorage.getItem("PageTitle");
-}, []);
+//   useEffect(() => {
+//    var div = document.getElementById("pageTopTitle");
+//                     div.innerHTML =
+//                       "Informh - " + sessionStorage.getItem("PageTitle");
+// }, []);
 
   return (
     <div className="App">

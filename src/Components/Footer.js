@@ -1,7 +1,8 @@
 import React from 'react'
 import '.././Style.css';
 import { FaFacebookF, FaInstagram, FaYoutube, FaPhoneAlt, FaSchool, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
-import { Grid, Link, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -64,12 +65,12 @@ const Footer = () => {
                             <div className="footer-column">
                                 <h3>QUICK LINKS</h3>
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Who We Are</a></li>
-                                    <li><a href="#">Our Services</a></li>
-                                    <li><a href="#">Our Gallery</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Donate</a></li>
+                                    <li><Link  to="#">Home</Link></li>
+                                    <li><Link  to="#">Who We Are</Link ></li>
+                                    <li><Link  to="#">Our Services</Link ></li>
+                                    <li><Link  to="#">Our Gallery</Link ></li>
+                                    <li><Link  to="#">Contact</Link ></li>
+                                    <li><Link  to="#">Donate</Link ></li>
                                 </ul>
                             </div>
                         </Grid>
@@ -80,9 +81,9 @@ const Footer = () => {
                             <div className="footer-column">
                                 <h3>FOLLOW US</h3>
                                 <div className="social-icons">
-                                    <a href="#"><FaFacebookF /></a>
-                                    <a href="#"><FaInstagram /></a>
-                                    <a href="#"><FaYoutube /></a>
+                                    <Link  to="#"><FaFacebookF /></Link >
+                                    <Link  to="#"><FaInstagram /></Link >
+                                    <Link  to="#"><FaYoutube /></Link >
                                 </div>
                             </div>
                         </Grid>

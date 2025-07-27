@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import '.././Style.css';
 import { useNavigate } from 'react-router-dom';
-import { Grid, Box, Button, Divider, Avatar, Tooltip } from '@mui/material';
+import { Grid,  Button, Divider, Avatar, Tooltip } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -56,9 +57,9 @@ const Navbar = () => {
       <Grid container className="navbar">
         <Grid size={{ xs: 6, sm: 6, md: 4, lg: 4 }}>
           <div className="logo">
-            <a href="/">
+            <Link  to="/">
               <img src={`${process.env.PUBLIC_URL}/assets/Logo2.png`} alt="Logo" />
-            </a>
+            </Link >
           </div>
         </Grid>
         {isMobile ? (
@@ -97,12 +98,12 @@ const Navbar = () => {
         ) : (
           <>
             <div className="nav-links">
-              <a href="/">Home</a>
-              <a href="/AboutUs">About Us</a>
-              <a href="/OurService">Our Services</a>
-              {/* <a href="/Gallery">Our Gallery</a> */}
-              <a href="/Contact">Contact</a>
-              <a href="/Testimonial">Testimonial</a>
+              <Link  to="/">Home</Link >
+              <Link  to="/AboutUs">About Us</Link >
+              <Link  to="/OurService">Our Services</Link >
+              {/* <Link  to="/Gallery">Our Gallery</Link > */}
+              <Link  to="/Contact">Contact</Link >
+              <Link  to="/Testimonial">Testimonial</Link >
             </div>
             <div className="donate-btn">
               <button onClick={handleDonate}>Donate Now »</button>
